@@ -1,11 +1,7 @@
 {
-  "plugins": [
-    {
-      "project": "XWalk Block Collection",
-      "editUrlFormat": {
-        "label": "Universal Editor",
-        "pattern": "{{contentSourceUrl}}{{pathname}}?cmd=open"
-      }
-    }
-  ]
+  "project": "XWalk Block Collection",
+  "editUrlFormat": {
+    "label": "Universal Editor",
+    "pattern": "{{contentSourceUrl}}{{pathname}}?cmd=open"
+  }
 }
