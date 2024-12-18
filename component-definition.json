@@ -160,7 +160,9 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "FAQ Item",
-                  "model": "faqitem"
+                  "model": "faqitem",
+                  "question": "What is the question?",
+                  "answer": "This is the answer."
                 }
               }
             }
