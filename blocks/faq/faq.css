@@ -12,13 +12,13 @@
 .faq-question {
   width: 100%;
   text-align: left;
-  border: none;
+  border: 1px solid black;
   position: relative;
-  padding: 1rem 3rem 1rem 1rem;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
   margin: 0;
   background-color: var(--overlay-color);
   cursor: pointer;
-  border-bottom: 1px solid var(--background-color);
+  color: black;
 }
 
 /* Style for the h3 inside question */
@@ -71,4 +71,16 @@
 .faq-question:focus {
   outline: 2px solid var(--link-color);
   outline-offset: -2px;
+}
+
+/* Update hover state */
+.faq-question:hover {
+  background-color: var(--overlay-color-dark, #eee);
+}
+
+/* Update expanded state */
+.faq-question[aria-expanded="true"] {
+  background-color: var(--link-color, blue);
+  color: white;
+  border-color: var(--link-color, blue);
 } 
