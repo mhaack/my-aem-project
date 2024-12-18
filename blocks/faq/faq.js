@@ -1,3 +1,5 @@
+import { moveInstrumentation } from '../../scripts/scripts.js';
+
 export default function decorate(block) {
   // Create FAQ list container
   const faqList = document.createElement('dl');
@@ -10,6 +12,7 @@ export default function decorate(block) {
     // Create question element
     const dt = document.createElement('dt');
     dt.className = 'faq-question';
+    moveInstrumentation(row, dt);
     
     // Create h3 for the question
     const h3 = document.createElement('h3');
