@@ -12,7 +12,6 @@ export default function decorate(block) {
     // Create question element
     const dt = document.createElement('dt');
     dt.className = 'faq-question';
-    moveInstrumentation(row, dt);
     
     // Create h3 for the question
     const h3 = document.createElement('h3');
@@ -35,6 +34,8 @@ export default function decorate(block) {
     dt.setAttribute('aria-expanded', 'false');
     dd.setAttribute('aria-hidden', 'true');
     
+    moveInstrumentation(questionDiv, dt);
+    moveInstrumentation(answerDiv, dd);
     // Add elements to FAQ list
     faqList.appendChild(dt);
     faqList.appendChild(dd);
