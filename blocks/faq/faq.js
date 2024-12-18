@@ -4,6 +4,7 @@ export default function decorate(block) {
   // Create FAQ list container
   const faqList = document.createElement('dl');
   faqList.className = 'faq-list';
+  moveInstrumentation(block, faqList);
 
   // Process each FAQ item
   [...block.children].forEach((row) => {
