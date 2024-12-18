@@ -4,14 +4,15 @@ export default function decorate(block) {
   // Create FAQ list container
   const faqList = document.createElement('dl');
   faqList.className = 'faq-list';
-  moveInstrumentation(block, faqList);
+  
 
   // Process each FAQ item
   [...block.children].forEach((row) => {
     const [questionDiv, answerDiv] = row.children;
-    
+  
     // Create question element
     const dt = document.createElement('dt');
+    moveInstrumentation(row, dt);
     dt.className = 'faq-question';
     
     // Create h3 for the question
@@ -35,7 +36,7 @@ export default function decorate(block) {
     dt.setAttribute('aria-expanded', 'false');
     dd.setAttribute('aria-hidden', 'true');
     
-    moveInstrumentation(questionDiv, dt);
+    moveInstrumentation(questionDiv, h3);
     moveInstrumentation(answerDiv, dd);
     // Add elements to FAQ list
     faqList.appendChild(dt);
