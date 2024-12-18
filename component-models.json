@@ -187,17 +187,14 @@
     ]
   },
   {
-    "id": "faq",
+    "id": "faqitem",
     "fields": [
       {
-        "component": "title",
+        "component": "text",
         "name": "question",
         "value": "",
         "label": "Question",
-        "valueType": "string",
-        "properties": {
-          "level": "h3"
-        }
+        "valueType": "string"
       },
       {
         "component": "richtext",
