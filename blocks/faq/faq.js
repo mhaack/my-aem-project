@@ -1,7 +1,7 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
-  // Create FAQ list container as ul instead of dl
+  // Create FAQ list container as ul
   const faqList = document.createElement('ul');
   faqList.className = 'faq-list';
   
@@ -13,16 +13,12 @@ export default function decorate(block) {
     // Create list item to contain both question and answer
     const li = document.createElement('li');
     li.className = 'faq-item';
-    moveInstrumentation(row, li);
     
     // Create question element as a button
     const questionBtn = document.createElement('button');
+    moveInstrumentation(row, li);
     questionBtn.className = 'faq-question';
-    
-    // Create h3 for the question
-    const h3 = document.createElement('h3');
-    h3.innerHTML = questionDiv.innerHTML;
-    questionBtn.appendChild(h3);
+    questionBtn.innerHTML = questionDiv.innerHTML; // Direct use of question content
     
     // Create answer element as div
     const answer = document.createElement('div');
@@ -40,7 +36,7 @@ export default function decorate(block) {
     questionBtn.setAttribute('aria-expanded', 'false');
     answer.setAttribute('aria-hidden', 'true');
     
-    moveInstrumentation(questionDiv, h3);
+    moveInstrumentation(questionDiv, questionBtn);
     moveInstrumentation(answerDiv, answer);
     
     // Add elements to list item

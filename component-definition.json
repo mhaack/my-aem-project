@@ -162,6 +162,7 @@
                   "name": "FAQ Item",
                   "model": "faqitem",
                   "question": "What is the question?",
+                  "questionType": "h3",
                   "answer": "This is the answer."
                 }
               }

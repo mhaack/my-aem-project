@@ -197,6 +197,14 @@
         "valueType": "string"
       },
       {
+        "component": "text",
+        "name": "questionType",
+        "value": "h3",
+        "label": "Question Type",
+        "valueType": "string",
+        "hidden": true
+      },
+      {
         "component": "richtext",
         "name": "answer",
         "value": "",
