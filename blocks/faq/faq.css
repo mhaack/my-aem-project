@@ -1,9 +1,18 @@
 .faq-list {
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.faq-item {
+  margin: 0;
+  padding: 0;
 }
 
 .faq-question {
+  width: 100%;
+  text-align: left;
+  border: none;
   position: relative;
   padding: 1rem 3rem 1rem 1rem;
   margin: 0;
