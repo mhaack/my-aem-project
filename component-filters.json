@@ -27,13 +27,20 @@
       "title",
       "hero",
       "cards",
-      "columns"
+      "columns",
+      "faq"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "faq",
+    "components": [
+      "faqitem"
     ]
   }
 ]

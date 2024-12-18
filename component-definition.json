@@ -51,6 +51,21 @@
               }
             }
           }
+        },
+        {
+          "title": "FAQ",
+          "id": "faq",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/faq/v1/faq",
+                "template": {
+                  "name": "FAQ",
+                  "model": "faq"
+                }
+              }
+            }
+          }
         }
       ]
     },

@@ -185,5 +185,27 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "faq",
+    "fields": [
+      {
+        "component": "title",
+        "name": "question",
+        "value": "",
+        "label": "Question",
+        "valueType": "string",
+        "properties": {
+          "level": "h3"
+        }
+      },
+      {
+        "component": "richtext",
+        "name": "answer",
+        "value": "",
+        "label": "Answer",
+        "valueType": "string"
+      }
+    ]
   }
 ]
