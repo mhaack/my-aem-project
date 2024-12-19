@@ -96,8 +96,8 @@ async function fetchWeatherData(city) {
 }
 
 export default async function decorate(block) {
-  const config = readBlockConfig(block);
-  const city = config.city || 'London';
+  // Extract city directly from the block content
+  const city = block.textContent.trim() || 'London';
   
   try {
     const weatherData = await fetchWeatherData(city);
