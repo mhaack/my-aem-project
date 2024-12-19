@@ -12,20 +12,20 @@ export default function decorate(block) {
     testimonialCard.className = 'testimonial-card';
     moveInstrumentation(testimonial, testimonialCard);
     
-    // Create quote container
-    const quoteContainer = document.createElement('div');
-    quoteContainer.className = 'testimonial-quote-container';
-    
     // Handle author image
     const img = testimonial.querySelector('img');
     if (img) {
-      const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '150' }]);
+      const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '600' }]);
       const imageWrapper = document.createElement('div');
       imageWrapper.className = 'testimonial-image';
       moveInstrumentation(img, optimizedPic.querySelector('img'));
       imageWrapper.appendChild(optimizedPic);
       testimonialCard.appendChild(imageWrapper);
     }
+    
+    // Create content container
+    const contentContainer = document.createElement('div');
+    contentContainer.className = 'testimonial-content';
     
     // Handle quote
     const quote = testimonial.querySelector('p');
@@ -34,7 +34,7 @@ export default function decorate(block) {
       quoteText.className = 'testimonial-quote';
       quoteText.innerHTML = quote.innerHTML;
       moveInstrumentation(quote, quoteText);
-      quoteContainer.appendChild(quoteText);
+      contentContainer.appendChild(quoteText);
     }
     
     // Handle author name
@@ -44,10 +44,10 @@ export default function decorate(block) {
       authorName.className = 'testimonial-author';
       authorName.textContent = author.textContent;
       moveInstrumentation(author, authorName);
-      quoteContainer.appendChild(authorName);
+      contentContainer.appendChild(authorName);
     }
     
-    testimonialCard.appendChild(quoteContainer);
+    testimonialCard.appendChild(contentContainer);
     gridContainer.appendChild(testimonialCard);
   });
   
