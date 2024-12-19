@@ -258,5 +258,83 @@
         }
       ]
     }
+  },
+  {
+    "id": "video-hero",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoUrl",
+        "label": "Video",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "label": "Heading",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text Content",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "overlayOpacity",
+        "label": "Overlay Opacity",
+        "value": "0.4"
+      }
+    ]
+  },
+  {
+    "id": "features-grid",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "label": "Section Heading",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "columns",
+        "label": "Columns per Row",
+        "value": "3"
+      }
+    ]
+  },
+  {
+    "id": "feature-item",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Feature Icon",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Feature Title",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Feature Description",
+        "valueType": "string"
+      }
+    ]
   }
 ]
