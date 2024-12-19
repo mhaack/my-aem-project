@@ -28,7 +28,11 @@
       "hero",
       "cards",
       "columns",
-      "faq"
+      "faq",
+      "video-hero",
+      "features-grid",
+      "product-showcase",
+      "testimonials"
     ]
   },
   {
@@ -41,6 +45,24 @@
     "id": "faq",
     "components": [
       "faqitem"
+    ]
+  },
+  {
+    "id": "features-grid",
+    "components": [
+      "feature-item"
+    ]
+  },
+  {
+    "id": "product-showcase",
+    "components": [
+      "product-item"
+    ]
+  },
+  {
+    "id": "testimonials",
+    "components": [
+      "testimonial"
     ]
   }
 ]

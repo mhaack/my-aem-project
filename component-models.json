@@ -212,5 +212,51 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "product-showcase": {
+      "fields": [
+        {
+          "component": "text",
+          "name": "title",
+          "label": "Product Title",
+          "valueType": "string"
+        },
+        {
+          "component": "reference",
+          "name": "image",
+          "label": "Product Image",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "description",
+          "label": "Product Description",
+          "valueType": "string"
+        }
+      ]
+    },
+    "testimonial": {
+      "fields": [
+        {
+          "component": "reference",
+          "name": "authorImage",
+          "label": "Author Image",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "quote",
+          "label": "Testimonial Quote",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "author",
+          "label": "Author Name",
+          "valueType": "string"
+        }
+      ]
+    }
   }
 ]
